@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Untitled Document</title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.pack.js"></script>
+    <script type="text/javascript" src="jquery.slideMenu.js"></script>
+	
+	<script type = "text/javascript">
+    // Define the entry point
+    $(document).ready(function()
+    {  
+        $('#menu_default').slideMenu();
+		
+		$('#menu_override_1').slideMenu({
+			evenColour: "#AEBC21",
+			oddColour: "#D9DB56"
+		});
+		
+		$('#menu_override_2').slideMenu({
+			newHeight: "100px",
+			evenColour: "#8DC3E9",
+			oddColour: "#4C88BE"
+		});
+		
+		$('#menu_override_3').slideMenu({
+			newHeight: "25px",
+			evenColour: "#C6D729",
+			oddColour: "#9C3839"
+		});
+    });
+	</script>
+	 
+	 <style>  
+       body {font-family:arial;font-style:bold}  
+       a {color:#666; text-decoration:none}  
+         .menu {list-style:none;width:160px;padding-left:10px;}  
+         .menu li {margin:0;padding:5px;cursor:hand;cursor:pointer}  
+	</style>
+
+
+</head>
+
+<body>
+
+<ul id="menu_default" class="menu">
+	<li><a href="#">item 1</a></li>
+    <li><a href="#">item 2</a></li>
+    <li><a href="#">item 3</a></li>
+    <li><a href="#">item 4</a></li>
+</ul>
+
+<hr />
+
+<ul id="menu_override_1" class="menu">
+	<li><a href="#">item 1</a></li>
+    <li><a href="#">item 2</a></li>
+    <li><a href="#">item 3</a></li>
+    <li><a href="#">item 4</a></li>
+    <li><a href="#">item 5</a></li>
+    <li><a href="#">item 6</a></li>
+    <li><a href="#">item 7</a></li>
+</ul>
+
+<hr />
+
+<ul id="menu_override_2" class="menu">
+	<li><a href="#">item 1</a></li>
+    <li><a href="#">item 2</a></li>
+    <li><a href="#">item 3</a></li>
+    <li><a href="#">item 4</a></li>
+    <li><a href="#">item 5</a></li>
+</ul>
+
+
+<hr />
+
+<ul id="menu_override_3" class="menu">
+	<li><a href="#">item 1</a></li>
+    <li><a href="#">item 2</a></li>
+    <li><a href="#">item 3</a></li>
+</ul>
+
+
+</body>
+</html>
